@@ -1,3 +1,4 @@
+//creating the best paths 
 var createBestPaths=function(d) {
   doc={};
   var s_e=d._id;
@@ -13,6 +14,7 @@ var createBestPaths=function(d) {
   doc.bestPath=best_path;
   db.bestPaths.insert(doc);
 }
+//map function which starts using points
 
 var map = function(){ 
   print("Begin map");
@@ -28,7 +30,7 @@ var map = function(){
   e.push(y_max); 
   emit(s.concat(e),this.points);  
 }
-
+//reduce which does path computation
 var reduce = function(start_end,paths){
   print("Begin reduce");
 var sim = function(p1,p2) {
@@ -89,6 +91,7 @@ var buckets = function(all_paths) {
     }
     return b_s;
 }
+//retrieving most popular buckets
 var get_largest_buckets = function(B) {
   var max = -1;
   var max_index = -1;
@@ -161,6 +164,7 @@ var first_doc = { start : [40.80665708738505,-73.9611441069153], end:[40.8098860
         [40.81000788991811, -73.95078435381777],
         [40.80988608303819, -73.95049467524416]] };
 
+//getting similar paths
 var getSimilarDoc = function(d){
    var doc = {};
    var small_delta = 0.0001;
@@ -232,6 +236,7 @@ var third_doc = { start : [40.8068245966909, -73.96104112109072], end : [40.8102
         [40.8098779625716, -73.95139589747316],
         [40.810251503007144, -73.95110621889955]] };
 
+//adding points to database
 db.userData.remove({});
 db.userData.insert(first_doc);
 db.userData.insert(second_doc);

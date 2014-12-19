@@ -2,8 +2,9 @@
 //  ViewController.m
 //  RouteFinder
 //
-//  Created by Sameer Lal on 12/5/14.
-//  Copyright (c) 2014 AbhiandEsha. All rights reserved.
+//
+//  Implements the main view controller with the startup screen
+// starts the location services as soon as application starts
 //
 
 #import "ViewController.h"
@@ -85,6 +86,7 @@ NSMutableArray *end_arr;
     // Dispose of any resources that can be recreated.
 }
 
+//method for updating locations
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
@@ -234,7 +236,7 @@ NSMutableArray *end_arr;
     }
     
 }
-
+//checks if location services is on
 
 - (BOOL) locationServicesAvailable{
     if ([CLLocationManager locationServicesEnabled] == NO) {

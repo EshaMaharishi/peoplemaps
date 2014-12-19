@@ -1,3 +1,4 @@
+//instantiates mongo client and sets up node server
 var http = require('http'),
     express = require('express'),
     path = require('path');
@@ -12,6 +13,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade'); 
 app.use(express.bodyParser());
 
+//running on ec2
 var mongoHost = 'ec2-54-69-87-192.us-west-2.compute.amazonaws.com'; 
 var mongoPort = 27017; 
 var collectionDriver;
@@ -28,6 +30,7 @@ mongoClient.open(function(err, mongoClient) {
  
 app.use(express.static(path.join(__dirname, 'public')));
 
+//getting points back from mongo
 app.get('/:collection', function(req, res) { 
    var params = req.params; 
    collectionDriver.findAll(req.params.collection, function(error, objs) { 
@@ -76,6 +79,7 @@ app.get('/:collection/:entity', function(req, res) {
    }
 });
 
+//post request for adding locations to mongo
 app.post('/:collection', function(req, res) { 
     var object = req.body;
     var collection = req.params.collection;
@@ -85,6 +89,7 @@ app.post('/:collection', function(req, res) {
      });
 });
 
+//put request to mongo
 app.put('/:collection/:entity', function(req, res) { //A
     var params = req.params;
     var entity = params.entity;

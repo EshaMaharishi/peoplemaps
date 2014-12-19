@@ -2,8 +2,9 @@
 //  MapViewController.m
 //  RouteFinder
 //
-//  Created by Sameer Lal on 12/5/14.
-//  Copyright (c) 2014 AbhiandEsha. All rights reserved.
+//
+//  This file has the actual implementation of the map along with the
+// geocoding of the start and end user locations
 //
 
 #import "MapViewController.h"
@@ -38,6 +39,7 @@
             float latitude = coord.latitude;
             float longitude = coord.longitude;
             
+            //geocoding end address
             [geocoder geocodeAddressString: endAddress completionHandler:^(NSArray *placemarks, NSError *error){
                 if(placemarks.count > 0){
                     
@@ -73,6 +75,7 @@
                     
                     NSLog(urls);
                     
+                    //sending request to node server
                     NSURL* url = [NSURL URLWithString:urls];
                     
                     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
@@ -102,6 +105,7 @@
                             span.latitudeDelta = 2*fabs(end.latitude - start.latitude);
                             span.longitudeDelta = 2*fabs(end.longitude - start.longitude);
                             
+                            //adding points to map 
                             MKCoordinateRegion region;
                             CLLocationCoordinate2D centerLoc;
                             centerLoc.latitude = start.latitude + (end.latitude - start.latitude)/2;

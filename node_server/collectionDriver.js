@@ -1,3 +1,5 @@
+//used for setting up mongo
+
 var ObjectID = require('mongodb').ObjectID;
 
 CollectionDriver = function(db) {
