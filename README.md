@@ -58,5 +58,8 @@ Points are represented as latitude-longitude coordinates. In order to determine 
 
 ## The MapReduce Algorithm
 
+In order to generate clusters, MongoDB's native MapReduce engine is used. The map function groups documents based on the concatenation of their start and end points, and the reduce function applies the path clustering algorithm above. MapReduce is used to parallelize the path clustering for different endpoints, of which there are obviously a massive number.
 
 ## Eventual Direction
+
+My best recommendation for the future of the PeopleMaps project is for it to merge with an existing, common route suggestion platform (such as Google Maps) as an alternative route that can be requested. While the benefits of user-based suggestions are clear, it wouldn't hurt to also utilize monitored information-- or leave it up to the user to decide which mode they prefer, at least until the PeopleMaps theory is more thoroughly tested.
