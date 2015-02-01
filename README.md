@@ -22,7 +22,14 @@ to advocate for determining best paths based on user behavior.
 
 ### A Little Deeper into the Theory
 
-**Humans can digest a vast number of nuanced factors** that are difficult to measure, quantify, or weight in aggregate (for example, the safety of a particular neighborhood, the status of an ongoing construction site, the presence of children on a particular street, a route typically congested at peak hours). Though many of these *are* measurable by a centralized institution, determining a holistic best path from them is a **difficult problem**. Also, it's sometimes wasteful to quantify every possible factor for every environment--often only 2 or 3 factors are relevant in any particular case.
+**Humans can digest a vast number of nuanced factors** that are difficult to measure, quantify, or weight in aggregate, for example:
+
+* the safety of a particular neighborhood
+* the status of an ongoing construction site
+* the presence of children on a particular street
+* a route typically congested at peak hours
+
+Though many of these *are* measurable by a centralized institution, determining a holistic best path from them is a **difficult problem**. Also, it's sometimes wasteful to quantify every possible factor for every environment--often only 2 or 3 factors are relevant in any particular case.
 
 Therefore, **PeopleMaps treats users as distributed, decentralized network of smart sensors** who report their "opinion" of various paths to the central system in the form of **"votes"**: each time a user takes a path P between point A and B, he or she is casting a vote for that path over all other possible paths. Then when giving path suggestions, PeopleMaps returns the highest-voted path between the requested endpoints.
 
