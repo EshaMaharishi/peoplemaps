@@ -6,7 +6,6 @@
 * [Application Architecture and Flow](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
 * [Path Clustering Algorithm](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
 * [MapReduce Algorithm](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [Hosting on Amazon Cloud](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
 * [Eventual Direction](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
 
 ### The Elevator Pitch
@@ -41,14 +40,23 @@ Four years later, PeopleMaps is readily being developed, with a functioning iOS 
 
 ## Application Architecture and Flow
 
+PeopleMaps is currently an iOS application that is hosted in the cloud using Amazon Beanstalk for auto-scale. It uses MongoDB in the backend for data storage and as a MapReduce compute engine.
+
+The iOS Core Location framework is used to monitor users’ movements in the background. Though for now the Standard Location Service (SLS) is used, which constantly records the user’s location at a high level of accuracy (but consumes a lot of energy), a simple switch to the Significant Change Service, which detects when the user starts moving, can be used to greatly cut down on the energy consumption.
+
+An algorithm developed in-house is used to determine when a user has completed a path, at which point the path is pushed to a NodeJS/Express server over a RESTful API, and the server batch-inserts paths into MongoDB. Each path is stored as document with start, end, and set-of-coordinates fields.
+
+When a user requests requests a path, the highest-voted path as defined above is returned (see below for algorithm details).
 
 ## Path Clustering Algorithm
 
+At the highest level, paths between the same endpoints (or close to same, as defined by MongoDB's geospatial $near operator) are compared to each other, and if they are deemed "similar," are bucketed into the same cluster. When a new path is introduced, it is compared to a representative path from each bucket in order to be classified. 
+
+Paths are represented using a "bag of points" model, where each point is a geospatial coordinate. The Jacard index, defined as the intersection of two sets divided by their union, is used to compute the similarity of two bags of points. A pair of paths with a high Jacard index are very similar. Different cut-off values for what constitutes "similar" when speaking about sets of coordinates were experimented with and can further be refined with a larger set of data.
+
+Points are represented as latitude-longitude coordinates. In order to determine if two points are same (or close to same), the geometric distance between them is calculated and if it falls within a threshold, they are considered the same. Again, the threshold can be refined as more data comes in.
 
 ## The MapReduce Algorithm
-
-
-## Hosting on Amazon Cloud
 
 
 ## Eventual Direction
