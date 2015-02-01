@@ -33,7 +33,7 @@ Though many of these *are* measurable by a centralized institution, determining 
 
 Therefore, **PeopleMaps treats users as distributed, decentralized network of smart sensors** who report their "opinion" of various paths to the central system in the form of **"votes"**: each time a user takes a path P between point A and B, he or she is casting a vote for that path over all other possible paths. Then when giving path suggestions, PeopleMaps returns the highest-voted path between the requested endpoints.
 
-By further weighting the most recent votes most highly, PeopleMaps aims to achieve a **real-time** best-route suggestion scheme at minimal infrastructural cost. Where other route suggestion schemes must wait for data (from sensors, reporters, etc.) to be collected before updating their suggestions, PeopleMaps takes the most up-to-date information directly into account.
+By further weighting the most recent votes most highly, PeopleMaps aims to achieve a **real-time** best-route suggestion scheme at minimal infrastructural cost. Where other route suggestion schemes must wait for data (from sensors, reporters, etc.) to be digested before updating their suggestions, PeopleMaps takes the most up-to-date information directly into account.
 
 ## The Motivation (a high school senior's frustrations with GPS)
 
