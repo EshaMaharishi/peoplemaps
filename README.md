@@ -1,12 +1,12 @@
 # PeopleMaps
 
 * [The Elevator Pitch](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [A Little Deeper into the Theory](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [The Motivation (a high school senior's frustrations with GPS)](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [Application Architecture and Flow](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [Path Clustering Algorithm](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [MapReduce Algorithm](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
-* [Eventual Direction](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [A Little Deeper into the Theory](https://github.com/EshaMaharishi/peoplemaps/blob/master/README.md#a-little-deeper-into-the-theory)
+* [The Motivation (a high school senior's frustrations with GPS)](https://github.com/EshaMaharishi/peoplemaps/blob/master/README.md#the-motivation-a-high-school-seniors-frustrations-with-gps)
+* [Application Architecture and Flow](https://github.com/EshaMaharishi/peoplemaps/blob/master/README.md#application-architecture-and-flow)
+* [Path Clustering Algorithm](https://github.com/EshaMaharishi/peoplemaps/blob/master/README.md#path-clustering-algorithm)
+* [MapReduce Algorithm](https://github.com/EshaMaharishi/peoplemaps/blob/master/README.md#the-mapreduce-algorithm)
+* [Eventual Direction](https://github.com/EshaMaharishi/peoplemaps/blob/master/README.md#eventual-direction)
 
 ### The Elevator Pitch
 
