@@ -41,7 +41,7 @@ When I lived outside D.C. as a high schooler four years ago, I would often accom
 
 The reality was that a relatively small sequence of binary options generally did not yield the best holistic path. The paths we knew from experience were a nuanced, weighted combination of factors. If someone asked us for the best paths personally, we would have different answers than any GPS we used.
 
-And so the idea for PeopleMaps was born: why *shouldn't* people like us be consulted for best path suggestions? We lived and drove around the area for years. We knew it better, more intuitively, than any centralized system. We were the most powerful sensors of our environment.
+And so the idea for PeopleMaps was born: why *shouldn't* people like us be consulted for best path suggestions? We lived and drove around the area for years. We knew it better, more intuitively, than any centralized system. We were the most powerful sensors, most nuanced sources of information on our local environment.
 
 Four years later, PeopleMaps is readily being developed, with a functioning iOS application prototype already in existence and hosted on Amazon Cloud.
 
