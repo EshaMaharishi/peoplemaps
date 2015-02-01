@@ -39,7 +39,7 @@ By further weighting the most recent votes most highly, PeopleMaps aims to achie
 
 When I lived outside D.C. as a high schooler four years ago, I would often accompany my dad on various errands around the greater-D.C. region. We relied on a GPS for directions, often holding an iPhone and typical car GPS next to each other and trying to reconcile our own knowledge with the GPS suggestions to find the best--aka smoothest, fastest, most pleasant--routes. To our frustration and sometimes humor, the GPS suggestions would lack basic knowledge that any local in the area had, largely because the **GPS offered us only binary options**: toll or no toll? Use or avoid highways?
 
-The reality was that a relatively small sequence of binary options generally did not yield the best holistic path. The paths we knew from experience were a nuanced, weighted combination of factors. If someone asked us for the best paths personally, we would have different answers.
+The reality was that a relatively small sequence of binary options generally did not yield the best holistic path. The paths we knew from experience were a nuanced, weighted combination of factors. If someone asked us for the best paths personally, we would have different answers than any GPS we used.
 
 And so the idea for PeopleMaps was born: why *shouldn't* people like us be consulted for best path suggestions? We lived and drove around the area for years. We knew it better, more intuitively, than any centralized system. We were the most powerful sensors of our environment.
 
