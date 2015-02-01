@@ -1,5 +1,14 @@
 # PeopleMaps
 
+* [The Elevator Pitch](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [A Little Deeper into the Theory](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [The Motivation (a high school senior's frustrations with GPS)](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [Application Architecture and Flow](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [Path Clustering Algorithm](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [MapReduce Algorithm](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [Hosting on Amazon Cloud](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+* [Eventual Direction](https://github.com/EshaMaharishi/peoplemaps/tree/master#the-elevator-pitch)
+
 ### The Elevator Pitch
 
 In its essence, the PeopleMaps project is an alternative to traditional route suggestion platforms (such as **Google Maps** and **Apple Maps**) which relies solely on users' behavior to suggest routes between locations.
@@ -39,7 +48,7 @@ Four years later, PeopleMaps is readily being developed, with a functioning iOS 
 ## The MapReduce Algorithm
 
 
-## Cloud Hosting
+## Hosting on Amazon Cloud
 
 
-## Wider Applications and Eventual Direction
+## Eventual Direction
