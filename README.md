@@ -53,7 +53,7 @@ The iOS Core Location framework is used to monitor users’ movements in the bac
 
 An algorithm developed in-house is used to determine when a user has completed a path, at which point the path is pushed to a NodeJS/Express server over a RESTful API, and the server batch-inserts paths into MongoDB. Each path is stored as document with start, end, and set-of-coordinates fields.
 
-When a user requests requests a path, the highest-voted path as defined above is returned (see below for algorithm details).
+When a user requests a path, the highest-voted path as defined above is returned (see below for algorithm details).
 
 ## Path Clustering Algorithm
 
